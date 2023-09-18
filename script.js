@@ -44,3 +44,24 @@ document.getElementById('pizza-minus').addEventListener('click', function () {
     const item = handlerValue(false,'pizza-value');
     updateTotal(item, 27, 'pizza_amount');
 })
+
+// Mutton=================
+document.getElementById('mutton-plus').addEventListener('click', function () {
+    const itemNumber = handlerValue(true, 'mutton-value');
+    updateTotal(itemNumber, 27, 'mutton_amount');
+})
+
+document.getElementById('mutton-minus').addEventListener('click', function () {
+    const item = handlerValue(false, 'mutton-value');
+    updateTotal(item, 27, 'mutton_amount');
+})
+// Fried Chicken=================
+document.getElementById('fried-plus').addEventListener('click', function () {
+    const itemNumber = handlerValue(true, 'fried-value');
+    updateTotal(itemNumber, 27, 'fried_amount');
+})
+
+document.getElementById('fried-minus').addEventListener('click', function () {
+    const item = handlerValue(false, 'fried-value');
+    updateTotal(item, 27, 'fried_amount');
+})
