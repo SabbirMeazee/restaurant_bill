@@ -37,7 +37,7 @@ function CalculateSub() {
     const drinkTotal = getTextValue('drink_amount')
     const subTotal = burgerTotal + pizzaTotal + MuttonTotal + FriedTotal + drinkTotal;
     document.getElementById('subTotal').innerText = subTotal;
-    //calculate tax
+    //calculate tax=========
     const tax= (subTotal*0.06).toFixed(2)
     document.getElementById('tax').innerText=tax;
     //total==========
@@ -76,36 +76,36 @@ document.getElementById('pizza-minus').addEventListener('click', function () {
 // Mutton=================
 document.getElementById('mutton-plus').addEventListener('click', function () {
     const itemNumber = handlerValue(true, 'mutton-value');
-    updateTotal(itemNumber, 27, 'mutton_amount');
+    updateTotal(itemNumber, 30, 'mutton_amount');
     CalculateSub()
 })
 
 document.getElementById('mutton-minus').addEventListener('click', function () {
     const item = handlerValue(false, 'mutton-value');
-    updateTotal(item, 27, 'mutton_amount');
+    updateTotal(item, 30, 'mutton_amount');
     CalculateSub()
 })
 // Fried Chicken=================
 document.getElementById('fried-plus').addEventListener('click', function () {
     const itemNumber = handlerValue(true, 'fried-value');
-    updateTotal(itemNumber, 27, 'fried_amount');
+    updateTotal(itemNumber, 24, 'fried_amount');
     CalculateSub()
 })
 
 document.getElementById('fried-minus').addEventListener('click', function () {
     const item = handlerValue(false, 'fried-value');
-    updateTotal(item, 27, 'fried_amount');
+    updateTotal(item, 24, 'fried_amount');
     CalculateSub()
 })
-// Fried Chicken=================
+// Drink=================
 document.getElementById('drink-plus').addEventListener('click', function () {
     const itemNumber = handlerValue(true, 'drink-value');
-    updateTotal(itemNumber, 27, 'drink_amount');
+    updateTotal(itemNumber, 5, 'drink_amount');
     CalculateSub()
 })
 
 document.getElementById('drink-minus').addEventListener('click', function () {
     const item = handlerValue(false, 'drink-value');
-    updateTotal(item, 27, 'drink_amount');
+    updateTotal(item, 5, 'drink_amount');
     CalculateSub()
 })
