@@ -4,7 +4,7 @@
 }
 
 .bg {
-    background-color: rgba(224, 248, 252, 0) !important;
+   
 }
 
 h1 {
@@ -90,6 +90,12 @@ h3 {
 
 
 @media (max-width: 500px) {
+.card-container {
+        width: 300px !important;
+    }
+
+}
+@media (max-width: 900px) {
 .card-container {
         width: 300px !important;
     }

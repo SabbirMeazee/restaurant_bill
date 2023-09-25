@@ -39,9 +39,11 @@ function CalculateSub() {
     document.getElementById('subTotal').innerText = subTotal;
     //calculate tax=========
     const tax= (subTotal*0.06).toFixed(2)
-    document.getElementById('tax').innerText=tax;
+  document.getElementById('tax').innerText=tax;
+    const tax2 = document.getElementById('tax').innerText
+   const tax3= parseFloat(tax2)
     //total==========
-    const total = subTotal+tax;
+    const total = subTotal+tax3;
     document.getElementById('total').innerText = total;
 
 }
